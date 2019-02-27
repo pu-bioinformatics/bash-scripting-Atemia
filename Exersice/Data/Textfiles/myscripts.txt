@@ -1,0 +1,1 @@
+grep '>' nrf1_seq.fa | cut -f2-4 -d  | sed 's/PREDICTED: //' | cut -f 1-2 -d  | sort -u | wc -l
